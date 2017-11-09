@@ -38,5 +38,12 @@ public class Regate {
 
     public void setRegate_distance(float regate_distance) {
         this.regate_distance = regate_distance;
+
+    }
+
+    @Override
+    public String toString() {
+
+        return regate_nom;
     }
 }
