@@ -29,9 +29,9 @@ public class Algos {
         // instancer le jeu d'essai
         Proprietaire proprietaire1 = new Proprietaire("Stout","Mary","m.stout@gmail.com",1984);
         Proprietaire proprietaire2= new Proprietaire("Sellers","Peter","p.sellers@gmail.com",1977);
-        Licencie licencie1 = new Licencie(15,3,2017,"max","pierre","ok.sele@gmail.com",1987);
-        Licencie licencie2 = new Licencie(13,3,2017,"max","pierre","ok.sele@gmail.com",1987);
-        Licencie licencie3 = new Licencie(14,3,2017,"max","pierre","ok.sele@gmail.com",1987);
+        Licencie licencie1 = new Licencie(15,3,2017,"seb","deniel","seb.seee@gmail.com",1987);
+        Licencie licencie2 = new Licencie(13,3,2017,"marie","dupond","mdp.k@gmail.com",1987);
+        Licencie licencie3 = new Licencie(14,3,2017,"michel","dubois","sele@gmail.com",1987);
         Commissaire commissaire = new Commissaire("commité super", "konrad", "krolikowski", "k.kroliko@gmail.com",1994);
         
         // mettre le jeu d'essai dans une collection
@@ -57,7 +57,7 @@ public class Algos {
         int cal1 = 2017;
        
       
-        //TEst
+        //Test
         try {
             licencie1.calculPoints(5, cal1);
         } catch (exception ex) {

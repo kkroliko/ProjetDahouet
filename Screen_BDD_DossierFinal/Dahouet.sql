@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Client :  localhost:3306
--- Généré le :  Mer 08 Novembre 2017 à 08:54
+-- Généré le :  Ven 10 Novembre 2017 à 11:24
 -- Version du serveur :  5.7.20-0ubuntu0.17.04.1
 -- Version de PHP :  7.0.22-0ubuntu0.17.04.1
 
@@ -114,7 +114,8 @@ CREATE TABLE `Challenge` (
 --
 
 INSERT INTO `Challenge` (`challenge_id`, `challenge_datedebut`, `challenge_datefin`, `challenge_nom`) VALUES
-(2, '2017-10-01', '2017-10-04', 'le challenge d\'hiver');
+(2, '2017-10-01', '2017-11-23', 'le challenge d\'hiver'),
+(3, '2018-04-05', '2018-06-09', 'le challenge d\'Ete');
 
 -- --------------------------------------------------------
 
@@ -295,7 +296,8 @@ CREATE TABLE `proprietaire` (
 
 INSERT INTO `proprietaire` (`proprietaire_id`, `proprietaire_nom`, `voilier_id`, `club_id`) VALUES
 (4, 'Marcel Martin', 1, 2),
-(5, 'Konrad', 2, 2);
+(5, 'Konrad', 2, 2),
+(6, 'Lionel Duboeuf', 2, 2);
 
 -- --------------------------------------------------------
 
@@ -449,7 +451,8 @@ CREATE TABLE `Voilier` (
 INSERT INTO `Voilier` (`voilier_id`, `voilier_numVoile`, `classe_id`, `voilier_nom`) VALUES
 (1, 7, 4, 'Mauraudeur A'),
 (2, 4, 5, 'Lesupervoilier'),
-(3, 9, 4, 'Voilier A');
+(3, 9, 4, 'Voilier A'),
+(4, 9, 3, 'IncroyableVoilier');
 
 --
 -- Index pour les tables exportées
@@ -566,7 +569,7 @@ ALTER TABLE `Voilier`
 -- AUTO_INCREMENT pour la table `Challenge`
 --
 ALTER TABLE `Challenge`
-  MODIFY `challenge_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `challenge_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT pour la table `Classe`
 --
@@ -606,7 +609,7 @@ ALTER TABLE `personne`
 -- AUTO_INCREMENT pour la table `proprietaire`
 --
 ALTER TABLE `proprietaire`
-  MODIFY `proprietaire_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `proprietaire_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT pour la table `Regate`
 --
@@ -626,7 +629,7 @@ ALTER TABLE `serie`
 -- AUTO_INCREMENT pour la table `Voilier`
 --
 ALTER TABLE `Voilier`
-  MODIFY `voilier_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `voilier_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- Contraintes pour les tables exportées
 --
